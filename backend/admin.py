@@ -3,4 +3,6 @@ from .models import DigitalProduct
 
 # Register your models here.
 
-admin.site.register(DigitalProduct)
+@admin.register(DigitalProduct)
+class DigitalProductAdmin(admin.ModelAdmin):
+    pass
